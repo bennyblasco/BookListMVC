@@ -1,11 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
+using BookListMVC.Models;
 
-namespace BookListMVC.Models
+namespace BookListMVC.AppData
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
         {
         }
         public DbSet<Book> Books { get; set; }
