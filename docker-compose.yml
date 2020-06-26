@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  booklistmvc:
+    image: ${DOCKER_REGISTRY-}booklistmvc
+    build:
+      context: .
+      dockerfile: BookListMVC/Dockerfile
