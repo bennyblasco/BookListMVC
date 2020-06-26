@@ -1,5 +1,6 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System;
 
 namespace BookListMVC.Models
 {
@@ -10,8 +11,12 @@ namespace BookListMVC.Models
         public string Name { get; set; }
         public string Author { get; set; }
         public string ISBN { get; set; }
+
+        [Display(Name = "Release Date")]
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
+        
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
 
     }
