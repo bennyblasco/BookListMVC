@@ -25,4 +25,15 @@
     <Folder Include="AppData\" />
     <Folder Include="Views\Books\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="ftp:\booklist.healthinsure.com.ng\BookListMVC.runtimeconfig.json" />
+    <Content Remove="ftp:\booklist.healthinsure.com.ng\appsettings.json" />
+    <Content Remove="ftp:\booklist.healthinsure.com.ng\BookListMVC.deps.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Properties\PublishProfiles\FolderProfile 2.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\PublishProfiles\FolderProfile 2.pubxml" />
+  </ItemGroup>
 </Project>
