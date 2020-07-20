@@ -25,4 +25,9 @@
     <Folder Include="AppData\" />
     <Folder Include="Views\Books\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="ftp:\booklist.healthinsure.com.ng\BookListMVC.runtimeconfig.json" />
+    <Content Remove="ftp:\booklist.healthinsure.com.ng\appsettings.json" />
+    <Content Remove="ftp:\booklist.healthinsure.com.ng\BookListMVC.deps.json" />
+  </ItemGroup>
 </Project>
